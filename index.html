@@ -1,0 +1,105 @@
+<!-- tabbing on doc gives html code for a basic html page structure  -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<!-- look for bootstrap cdn on their website to get js and css links -->
+<!-- The names used here matters. They correspond with bootstrap css we linked. The doc link in 
+bootstrap website gives the names. -->
+<body>
+    <div class="bg-dark py-5 text-light shadow mb-5">
+        <!-- py-5 is for vertical padding. mb is margin bottom. -->
+
+        <div class="container">
+            <!-- the container class name sets the area as a container. i.e; the the block type view
+            where the content occupies the width of the page, properly centered horizontally. -->
+    
+            <h1 class="display-2"> Website Using Bootstrap</h1>
+            <p class="lead"> Thanks for visiting the webpage</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+         <div class="col-md-8">
+            <!-- Like CSS responsive grids, Bootstrap also uses 12-column grid system. 2/3rd of that is 8/12.
+                 For any screens md and above, we require the col-md-8 to take effect. Below that display the columns
+                 below one another. -->
+           <h1>Welcome To Our Page</h1>      
+
+          <p class="lead"> ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut nisi deleniti, corrupti, unde quas voluptate dolor, quod vel laborum illum numquam
+          fuga recusandae reprehenderit non atque soluta ipsam quasi.</p>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam impedit aliquam laudantium libero placeat adipisci nihil deserunt rerum esse voluptate, nisi 
+            obcaecati numquam. Beatae labore reiciendis ut cupiditate, id nihil!</p>
+            <a href="#bonus-content" data-toggle="collapse" class="btn btn-primary btn-lg">Learn More</a>
+            <!-- <a href="#" class="btn btn-primary btn-lg">Learn More</a> -->
+
+            <div class="collapse mt-3" id="bonus-content">
+                <!-- the id can be any name -->
+                <h3>Hidden Content!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio nemo dolor maiores culpa porro id, praesentium excepturi asperiores inventore corrupti 
+                    ratione neque vitae deserunt ut quos obcaecati sapiente nesciunt dolorem!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus praesentium eius, molestias dolore provident dolores, laudantium sapiente officiis, 
+                    corporis temporibus omnis! Earum eveniet hic nemo repudiandae iure ea harum amet.</p>
+            </div>
+         </div>
+<!-- Examples from bs website -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- Modal End -->
+
+
+         <div class="col-md-4 small">
+            <!-- small can also be used inside <p> -->
+          <div class="alert alert-warning">We recently updated our entire site. Check it out!</div>
+          <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore ut obcaecati aperiam illum incidunt, consectetur, molestiae totam ipsum perferendis
+             uscipit fugiat repellendus nesciunt corrupti eum eligendi asperiores, doloribus id qui?</p>
+          <!-- the modal we used-contact us -->
+           <button type="button"  class="btn btn-outline-success" data-bs-dismiss="modal" aria-label="Close">Contact Us</button>
+           <div class="modal-body">
+            ...
+          </div>
+           <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+          <!-- end of the modal we used- contact us -->
+        </div>
+         </div>
+        </div>
+
+    
+   <footer class="border-top my-5 py-4">
+    <p class="small text-muted text-center">&copy; 2020 Our Site</p>
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>
+ <!-- div.container + tab gives is a shorcut to create class. -->
